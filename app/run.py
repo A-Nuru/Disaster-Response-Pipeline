@@ -46,15 +46,11 @@ def index():
     category_counts = df.drop(['id','message','original','genre'], axis=1).sum()
     category_names = list(category_counts.index)
     
-    # find messages under genre news only
-    news = df[df['genre']=='news']
-    news_only = news.drop(['id','message','original','genre'], axis=1).sum()
-    news_count = news_only.sum().sort_values()
-    news_names = list(news_count.index)
+    
+    original_count = [df.original.notnull().mean(), df.original.isnull().mean(), 1]
+    original_names = ['Translated', 'Not Translated', 'Total']
 
-    #corpus_ wordseries = pd.Series(' '.join(df['message']).lower().split())
-    #corpus_top10words = corpus_ wordseries[~corpus_ wordseries.isin(stopwords.words("english"))].value_counts()[:10]
-    #corpus_top10words_names = list(corpus_top10words.index)
+    
     
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
@@ -99,13 +95,13 @@ def index():
         {
             'data': [
                 Bar(
-                    x=news_names,
-                    y=news_count
+                    x=original_names,
+                    y=original_count
                 )
             ],
 
             'layout': {
-                'title': 'Most Frequent Words',
+                'title': 'Translated and Untranslated Messages in Percent',
                 'yaxis': {
                     'title': "Count"
                 },
