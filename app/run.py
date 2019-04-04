@@ -26,11 +26,11 @@ def tokenize(text):
     return clean_tokens
 
 # load data
-engine = create_engine('sqlite:///../data/YourDatabaseName.db')
-df = pd.read_sql_table('YourTableName', engine)
+engine = create_engine('sqlite:///../data/DisasterResponse.db')
+df = pd.read_sql_table('df_message_table', engine)
 
 # load model
-model = joblib.load("../models/your_model_name.pkl")
+model = joblib.load("../models/classifier.pkl")
 
 
 # index webpage displays cool visuals and receives user input text for model
@@ -42,6 +42,19 @@ def index():
     # TODO: Below is an example - modify to extract data for your own visuals
     genre_counts = df.groupby('genre').count()['message']
     genre_names = list(genre_counts.index)
+    
+    category_counts = df.drop(['id','message','original','genre'], axis=1).sum()
+    category_names = list(category_counts.index)
+    
+    # find messages under genre news only
+    news = df[df['genre']=='news']
+    news_only = news.drop(['id','message','original','genre'], axis=1).sum()
+    news_count = news_only.sum().sort_values()
+    news_names = list(news_count.index)
+
+    #corpus_ wordseries = pd.Series(' '.join(df['message']).lower().split())
+    #corpus_top10words = corpus_ wordseries[~corpus_ wordseries.isin(stopwords.words("english"))].value_counts()[:10]
+    #corpus_top10words_names = list(corpus_top10words.index)
     
     # create visuals
     # TODO: Below is an example - modify to create your own visuals
@@ -61,6 +74,43 @@ def index():
                 },
                 'xaxis': {
                     'title': "Genre"
+                }
+            }
+        },
+        
+        {
+            'data': [
+                Bar(
+                    x=category_names,
+                    y=category_counts
+                )
+            ],
+
+            'layout': {
+                'title': 'Distribution of Categories',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Category"
+                }
+            }
+        },
+        {
+            'data': [
+                Bar(
+                    x=news_names,
+                    y=news_count
+                )
+            ],
+
+            'layout': {
+                'title': 'Most Frequent Words',
+                'yaxis': {
+                    'title': "Count"
+                },
+                'xaxis': {
+                    'title': "Words"
                 }
             }
         }
