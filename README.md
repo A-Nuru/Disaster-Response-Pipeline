@@ -54,3 +54,9 @@ The files are organised into folders as shown below:
 3. To get WORKSPACEID and WORKSPACEDOMAIN, open another Terminal Window and run
     `env|grep WORK` 
 4. Go to https://SPACEID-3001.SPACEDOMAIN to render the website
+
+## Results
+An application and a web app including data visualisations where an emergency worker can input a new disaster message and get classified results in several categories. Checkout the main files [here.](https://github.com/A-Nuru/Disaster-Response-Pipeline)
+
+## Licensing
+The license of this project can be found [here.](https://github.com/A-Nuru/Disaster-Response-Pipeline/blob/master/LICENSE)
