@@ -1,11 +1,11 @@
 # Disaster Response Pipeline Project
 ## Table of Contents
-1. [Installation](https://github.com/A-Nuru/Image-Classifier#Installation)
-2. [Project Motivation](https://github.com/A-Nuru/Image-Classifier#Project-Motivation)
-3. [File Descriptions](https://github.com/A-Nuru/Image-Classifier#File-Descriptions)
-4. [Instructions](https://github.com/A-Nuru/Image-Classifier#Instructions)
-5. [Results](https://github.com/A-Nuru/Image-Classifier#Results)
-6. [Licensing, Authors, Acknowledgements](https://github.com/A-Nuru/Image-Classifier#Licensing-Authors-Acknowledgements)
+1. [Installation](https://github.com/A-Nuru/Disaster-Response-Pipeline#Installation)
+2. [Project Motivation](https://github.com/A-Nuru/Disaster-Response-Pipeline#Project-Motivation)
+3. [File Descriptions](https://github.com/A-Nuru/Disaster-Response-Pipeline#File-Descriptions)
+4. [Instructions](https://github.com/A-Nuru/Disaster-Response-Pipeline#Instructions)
+5. [Results](https://github.com/A-Nuru/Disaster-Response-Pipeline#Results)
+6. [Licensing, Authors, Acknowledgements](https://github.com/A-Nuru/Disaster-Response-Pipeline#Licensing)
 
 ## Installation
 This project requires **Python 3.x** and the following Python libraries installed:
