@@ -61,3 +61,20 @@ An application and a web app including data visualizations where an emergency wo
 ## Licensing, Authors, Acknowledgements
 The license of this project can be found [here.](https://github.com/A-Nuru/Disaster-Response-Pipeline/blob/master/LICENSE)
 Credits must be given to Figure8 for providing the data to Udacity.
+
+
+
+![DRP1](https://user-images.githubusercontent.com/45924101/55646154-c0c2f500-57da-11e9-96b3-9e5aea1bbc3a.PNG)
+
+
+![DRP2](https://user-images.githubusercontent.com/45924101/55646252-0089dc80-57db-11e9-8f49-58caa3e0729c.PNG)
+
+
+![DRP3](https://user-images.githubusercontent.com/45924101/55646273-097aae00-57db-11e9-8c53-59114fb5d958.PNG)
+
+
+![DRP4](https://user-images.githubusercontent.com/45924101/55646284-0e3f6200-57db-11e9-9cab-c0d38ced3664.PNG)
+
+
+![DRP5](https://user-images.githubusercontent.com/45924101/55646295-15ff0680-57db-11e9-8515-45d224ac2f0a.PNG)
+
