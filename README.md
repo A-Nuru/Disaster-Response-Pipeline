@@ -5,7 +5,7 @@
 3. [File Descriptions](https://github.com/A-Nuru/Image-Classifier#File-Descriptions)
 4. [Instructions](https://github.com/A-Nuru/Image-Classifier#Instructions)
 5. [Results](https://github.com/A-Nuru/Image-Classifier#Results)
-6. [Licensing](https://github.com/A-Nuru/Image-Classifier#Licensing)
+6. [Licensing, Authors, Acknowledgements](https://github.com/A-Nuru/Image-Classifier#Licensing-Authors-Acknowledgements)
 
 ## Installation
 This project requires **Python 3.x** and the following Python libraries installed:
@@ -56,7 +56,8 @@ The files are organised into folders as shown below:
 4. Go to https://SPACEID-3001.SPACEDOMAIN to render the website
 
 ## Results
-An application and a web app including data visualisations where an emergency worker can input a new disaster message and get classified results in several categories. Checkout the main files [here.](https://github.com/A-Nuru/Disaster-Response-Pipeline)
+An application and a web app including data visualisations where an emergency worker can input a new disaster message and get classified result in several categories. Checkout the main files [here.](https://github.com/A-Nuru/Disaster-Response-Pipeline)
 
-## Licensing
+## Licensing, Authors, Acknowledgements
 The license of this project can be found [here.](https://github.com/A-Nuru/Disaster-Response-Pipeline/blob/master/LICENSE)
+Credits must be given to Figure8 for providing the data to Udacity.
