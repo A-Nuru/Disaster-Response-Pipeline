@@ -5,7 +5,7 @@
 3. [File Descriptions](https://github.com/A-Nuru/Disaster-Response-Pipeline#File-Descriptions)
 4. [Instructions](https://github.com/A-Nuru/Disaster-Response-Pipeline#Instructions)
 5. [Results](https://github.com/A-Nuru/Disaster-Response-Pipeline#Results)
-6. [Licensing, Authors, Acknowledgements](https://github.com/A-Nuru/Disaster-Response-Pipeline#Licensing)
+6. [Licensing, Authors, Acknowledgements](https://github.com/A-Nuru/Disaster-Response-Pipeline#Licensing-Authors-Acknowledgements)
 
 ## Installation
 This project requires **Python 3.x** and the following Python libraries installed:
